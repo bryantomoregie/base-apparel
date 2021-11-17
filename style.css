@@ -77,8 +77,32 @@ span:first-child {
   line-height: 1.5;
 }
 
-.slider {
+input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 3.5rem;
   border: var(--desaturated-red) 1px solid;
+  border-radius: 2em;
+  background-color: inherit;
+  text-indent: 24px;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ece;
+}
+
+::placeholder {
+  color: var(--desaturated-red);
+  opacity: 0.5;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.slider {
+  position: relative;
+  /* border: var(--desaturated-red) 1px solid;
   margin: 0 2rem 0 2rem;
   border-radius: 2rem;
   display: flex;
@@ -86,7 +110,7 @@ span:first-child {
   justify-content: space-between;
   height: 3rem;
   color: var(--desaturated-red);
-  padding-left: 1.3rem;
+  padding-left: 1.3rem; */
 }
 
 .slider--email {
@@ -96,9 +120,12 @@ span:first-child {
 .slider--icon-arrow {
   background-image: var(--button-gradient);
   width: 70px;
-  border-radius: inherit;
-  height: inherit;
+  border-radius: 2em;
+  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  right: 53px;
 }
