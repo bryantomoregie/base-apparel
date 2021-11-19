@@ -1,6 +1,9 @@
 const sliderInput = document.querySelector(".slider--input");
 const sliderButton = document.querySelector(".slider--icon-arrow");
 const errorIcon = document.querySelector(".slider--error");
+let hero = document.querySelector(".image__hero");
+let heroHidden = document.querySelector(".image__hero--desktop");
+const main = document.querySelector(".main");
 let input = sliderInput.value;
 
 sliderInput.addEventListener("keydown", () => {

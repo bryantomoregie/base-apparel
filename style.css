@@ -31,6 +31,11 @@
   color: hsl(228, 45%, 44%);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   height: 100%;
   background-image: var(--background-gradient);
@@ -48,6 +53,10 @@ body {
 
 .image__hero {
   width: 100%;
+}
+
+.image__hero--desktop {
+  display: none
 }
 
 .header {
@@ -138,5 +147,25 @@ input:focus {
   background-image: none;
   box-shadow: var(--desaturated-red) 0px 5px 15px;
   background-color:hsl(0, 80%, 86%);
+}
+
+@media (min-width: 750px){
+  main {
+    flex-direction: row;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    height: 100vh;
+    align-items: center;
+  }
+
+  body {
+    background-image: none;
+  }
+  .image__hero {
+    display: none
+  }
+  .image__hero--desktop {
+    display: block
+  }
+
 }
 
