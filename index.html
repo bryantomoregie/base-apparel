@@ -23,7 +23,11 @@
         alt="Apparel Logo"
       />
 
-      <img class="image image__hero" src="./images/hero-mobile.jpg" alt="" />
+      <picture class="image image__hero">
+        <source srcset="./images/hero-mobile.jpg" media="(max-width: 700px)" />
+        <img src="./images/hero-desktop.jpg" alt="" style="width: 100%" />
+      </picture>
+
       <section>
         <div class="header">
           <span>WE'RE</span><span>COMING</span><span>SOON</span>
