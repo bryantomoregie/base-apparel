@@ -26,3 +26,7 @@ function emailIsValid(email) {
 }
 
 sliderButton.addEventListener("click", () => emailIsValid(input));
+
+/**
+ 
+ */
