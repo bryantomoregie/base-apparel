@@ -150,23 +150,47 @@ input:focus {
 
 @media (min-width: 750px) {
   main {
-    flex-direction: row;
-    height: 100vh;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   .main--left {
     background-image: url(./images/bg-pattern-desktop.svg);
     background-color: var(--background-gradient);
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   body {
     background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .header {
+    align-items: start;
+    font-size: clamp(32px, 6vw, 80px);
+  }
+
+  .paragraph {
+    text-align: start;
+    font-size: clamp(12px, 14px, 16px);
   }
   .image__hero {
     display: none;
   }
   .image__hero--desktop {
     display: block;
+  }
+
+  .image__logo,
+  .header,
+  .paragraph {
+    margin-left: 7vw;
   }
 }
