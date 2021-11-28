@@ -40,6 +40,8 @@ body {
   height: 100%;
   background-image: var(--background-gradient);
   font-family: "Josefin Sans", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .image {
@@ -180,7 +182,13 @@ input:focus {
   .paragraph {
     text-align: start;
     font-size: clamp(12px, 14px, 16px);
+    margin-right: clamp(50px, 100px, 150px);
   }
+
+  .slider {
+    margin-right: clamp(50px, 100px, 150px);
+  }
+
   .image__hero {
     display: none;
   }
@@ -190,7 +198,11 @@ input:focus {
 
   .image__logo,
   .header,
-  .paragraph {
+  .paragraph,
+  .slider--input {
     margin-left: 7vw;
+  }
+
+  .slider--icon-arrow {
   }
 }
