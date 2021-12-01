@@ -204,5 +204,6 @@ input:focus {
   }
 
   .slider--icon-arrow {
+    right: 5px;
   }
 }
